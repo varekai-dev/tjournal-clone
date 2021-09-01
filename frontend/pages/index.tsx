@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { Header } from '../components/Header';
 import Image from 'next/image';
 import { Paper, Typography } from '@material-ui/core';
+import { Posts } from '../components/Posts';
 export default function Home() {
 	return (
 		<div>
@@ -16,11 +17,7 @@ export default function Home() {
 			<div>
 				<div className="leftSide"></div>
 				<div className="content">
-					<Paper elevation={0} className="p-20">
-						<Typography variant="h5">Пользователь «Хабра» нашёл в кнопочных телефонах вредоносные функции для перехвата SMS и тайной отправки данных в сеть</Typography>
-						<Typography>Трояны и бэкдоры позволяют злоумышленникам списывать деньги со счёта и следить за личной перепиской.</Typography>
-						<Image src="https://leonardo.osnova.io/ef6195fa-59c3-5dac-b405-770028469df5/-/preview/700/-/format/webp/" alt="" layout="fill" />
-					</Paper>
+					<Posts />
 				</div>
 				<div className="rightSide"></div>
 			</div>
